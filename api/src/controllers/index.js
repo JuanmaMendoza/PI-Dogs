@@ -38,6 +38,9 @@ exports.getBreeds = async (req, res) => {
                 }
             })
 
+
+            // TU VIEJA
+
             const response = response_db.concat(dogs_api)
             
             if (response.length) {
