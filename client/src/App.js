@@ -9,10 +9,11 @@ import Post from "./components/Post/Post";
 function App() {
   return (
     <React.Fragment>
-         <Route exact path="/" component={LandingPage} />
           <Route path ="/post" component={Post} /> 
           <Route path="/home" component={Home} /> 
-       <Route path="/perro/:id" component={Detail} />  
+          <Route path="/perro/:id" component={Detail} />  
+          <Route exact path="/" component={LandingPage} />
+
 
     </React.Fragment>
 );
