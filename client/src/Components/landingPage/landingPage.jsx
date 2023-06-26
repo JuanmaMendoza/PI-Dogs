@@ -1,24 +1,33 @@
+import s from './App.module.css';
 import React from "react";
-import { Link } from "react-router-dom";
-import styles from '../LandingPage/LandingPage.module.css'
+import { Link } from 'react-router-dom';
 
-const LandingPage = () => {
-    return (
+function LandingPage() {
+  return (
+    <>
 
-    <div className={styles.back_image} >
-
-            <div  className={styles.divStyle} >
-           <Link to ="/home">
-                <button className={styles.boton} > WOOF WOOF  </button>
+   <div className={s.App}>
+        <h4>
+          <span>W</span>
+          <span>E</span>
+          <span>L</span>
+          <span>C</span>
+          <span>O</span>
+          <span>M</span>
+          <span>E</span>
+          <span>!</span>
+          </h4> 
+      
+         <Link to='/home'>
+        <button type="button" className={s.fill}>HOME</button>
            </Link>
-        </div>
 
-        <div >
-                    <div  >
-        </div>
-        </div>
-        
-    </div>
-        )
+       <div className={s.im}>
+       <img className ={s.res} src="https://vidaconmascotas.com/wp-content/uploads/2021/03/%C2%BFCuantas-razas-de-perros-existen-en-el-mundo-Todos-los.jpg" alt={"img"}/>  
+      </div>
+      </div>
+     </>
+  );
 }
-export default LandingPage
+
+export default LandingPage;
