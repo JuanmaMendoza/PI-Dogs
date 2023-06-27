@@ -1,25 +1,29 @@
 import React from 'react';
 import c from './Card.module.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-function Card ({ name, image, temperaments, id}) {
- return (
-    <>
-          <div className = {c.name1}>
-             <Link to={`/perro/${id}`}>
-                 <p  className ={c.name} >{name}</p>  
-             </Link>
-       
 
-          <img className ={c.pic} src={image ? image :'https://t1.uc.ltmcdn.com/images/7/6/6/img_como_dibujar_un_perro_adorable_38667_600.jpg'} alt={"img"}/> 
+function Card({ name, image, temperaments, id, weight }) {
+   return (
+      <>
+         <div className={c.name1}>
+            <p className={c.name} >{name}</p>
 
-          <div className = {c.divDietsNames}>
-             {temperaments ? temperaments.length ? temperaments.map((f,i) =>(f.name ? <p key = {i}> {f.name} </p>: <p key ={i}>{f}</p>)) : <p>Temperament not defined</p>: <p>Sorry dog does not exist</p>}  
-          </div>   
-          </div>
-     </>
-   
- )
+            <Link to={`/perro/${id}`}>
+               <img className={c.pic} src={image ? image : 'https://th.bing.com/th/id/OIP.lWYHM0gm2akUkT45IkDUHgHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7'} alt={"img"} />
+            </Link>
+
+            <div className={c.divDietsNames}>
+               {temperaments ? temperaments.length ? temperaments.map((f, i) => (f.name ? <p key={i}> {f.name} </p> : <p key={i}>{f}</p>)) : <p>Temperament not defined</p> : <p>Sorry dog does not exist</p>}
+            </div>
+
+            <p className={c.weight}> Min Weight: {weight[0]} </p>
+            <p className={c.weight}> Max Weight: {weight[1]} </p>
+
+         </div>
+      </>
+
+   )
 }
 
 export default Card

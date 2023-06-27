@@ -11,7 +11,7 @@ function Home() {
  const [input, setInput]= useState('') 
 
  const [currentPage, setCurrentPage] = useState(1);
- const [postsPerPage] = useState(9);
+ const [postsPerPage] = useState(8);
  const [orden, setOrden]= useState('');
 
  const dispatch = useDispatch()
@@ -133,7 +133,7 @@ function handlefilterweight(e) {
              {currentPosts?.map(p => (
                <li className = 'lis1' key={p.id}>
                   <div className = 'name1'>
-                   <Card  name ={p.name} image = {p.image} temperaments ={p.temperaments} id = {p.id} />  
+                   <Card  name ={p.name} image = {p.image} temperaments ={p.temperaments} id = {p.id} weight = {p.weight} />  
                    </div>
                 </li>
                ))}

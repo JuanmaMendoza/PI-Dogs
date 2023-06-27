@@ -34,7 +34,7 @@ function Detail () {
          <h2 className ={a.name}>{dog[0].name}</h2> 
       
        <div className ={a.post}>
-        <img className={a.pic2}  src={dog[0].image ? dog[0].image :'https://t1.uc.ltmcdn.com/images/7/6/6/img_como_dibujar_un_perro_adorable_38667_600.jpg'} alt="img"/> 
+        <img className={a.pic2}  src={dog[0].image ? dog[0].image :'https://th.bing.com/th/id/OIP.lWYHM0gm2akUkT45IkDUHgHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7'} alt="img"/> 
 
         {dog[0].life_span ? <h5 className = {a.title1}>Life span: {dog[0].life_span}</h5> : <></> } 
          <div className={a.cont}> 
