@@ -25,9 +25,4 @@
      background-color:hsl(9, 32%, 92%);
     
 }
- .numberStyles:hover {
-            color:black;
-            background-color: rgb(169, 214, 229);
-            border: 2px solid rgb(132, 205, 230);
-        }
 

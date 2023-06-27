@@ -8,14 +8,7 @@ function LandingPage() {
 
    <div className={s.App}>
         <h4>
-          <span>W</span>
-          <span>E</span>
-          <span>L</span>
-          <span>C</span>
-          <span>O</span>
-          <span>M</span>
-          <span>E</span>
-          <span>!</span>
+          <span>WELCOME!</span>
           </h4> 
       
          <Link to='/home'>

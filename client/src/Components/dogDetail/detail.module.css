@@ -11,23 +11,7 @@
     position: relative;
     background-color: rgba(0, 0, 0, 0);
   }
-  
-  .fill::after {
-    content: "";
-    background-color:hsl(30, 64%, 63%); 
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
-  }
-  
-  .fill:hover::after {
-    top: 0px;
-    left: 0px;
-  }
+
   .name {
     font-family: 'Sarpanch', sans-serif;
     margin-top: 40px ;
