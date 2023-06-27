@@ -60,25 +60,7 @@ h3 .hD1 {
     transition: transform 0.8s;
   }
   
-  .slide:hover div {
-    transform: translateX(-6px);
-  }
-  
-  .slide::after {
-    content: "";
-    background-color:hsl(30, 64%, 63%);
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-  }
-  
-  .slide:hover i {
-    opacity: 1;
-    transform: translateX(-6px);
-  }
+
   .fill {
     font-family:  "Roboto Mono", monospace;
     font-size: 15px;
@@ -92,22 +74,7 @@ h3 .hD1 {
     background-color: rgba(0, 0, 0, 0);
   }
   
-  .fill::after {
-    content: "";
-    background-color:hsl(9, 32%, 92%);
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
-  }
-  
-  .fill:hover::after {
-    top: 0px;
-    left: 0px;
-  }
+
 
   .l1{
     font-family:"Roboto Mono", monospace;
@@ -155,22 +122,6 @@ h3 .hD1 {
     align-items: center;
   }
   
-  .b2::after {
-    content: "";
-    background-color: hsl(30, 64%, 63%);
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
-  }
-  
-  .b2:hover::after {
-    top: 0px;
-    left: 0px;
-  }
   .div1 {
     display: flex;
     flex-direction: row;

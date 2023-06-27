@@ -17,7 +17,7 @@ const lbtoKg = (weight) =>{
 
 
  const infoapi = async () => {
-    const obj = await axios.get('https://api.thedogapi.com/v1/breeds?api_key=' + YOUR_API_KEY); 
+    const obj = await axios.get(`https://api.thedogapi.com/v1/breeds?api_key=${YOUR_API_KEY}`); 
    const results = obj.data
     let arr= results.map(e => {
       e = {
